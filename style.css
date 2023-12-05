@@ -1,18 +1,25 @@
 :root {
-    --cor-primaria: #3A404E;
-    --cor-destaque: #8E2424;
-    --cor-branca: #FFFFFF;
+    --main-color: #8E2424;
+    --white-color: #FFFFFF;
+    --text-color: #667085;
     --fonte-padrao: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: var(--fonte-padrao);
 }
 
+/* CABECALHO */
 .cabecalho {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1.3em 0;
 }
 
 .cabecalho__logo {
@@ -23,7 +30,7 @@ body {
 
 .titulo__logo {
     font-size: 24px;
-    font-family: 'Inter' , sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #343944;
     font-weight: 700;
 }
@@ -32,7 +39,7 @@ body {
     display: flex;
     column-gap: 26px;
     list-style: none;
-    color: var(--cor-primaria);
+    color: var(--text-color);
 }
 
 .item__lista {
@@ -51,14 +58,45 @@ body {
 }
 
 .botao__cadastrar {
-    border: solid 1px var(--cor-destaque);
+    border: solid 1px var(--main-color);
     border-radius: 8px;
-    background: var(--cor-destaque);
-    color: var(--cor-branca);
-    box-shadow: var(--cor-primaria) 0 0 5px;
+    background: var(--main-color);
+    color: var(--white-color);
+    box-shadow: var(--text-color) 0 0 5px;
 }
 
 .botao__entrar {
-    color: var(--cor-primaria);
+    color: var(--text-color);
 }
 
+
+/* MAIN */
+
+/* SOBRE NÓS */
+
+.secao__sobre {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 96px 0;
+
+}
+
+.texto__um-sobre {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.texto__dois-sobre {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.texto__tres-sobre {
+    font-size: 20px;
+    color: var(--text-color);
+}
