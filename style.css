@@ -12,6 +12,7 @@
 
 body {
     font-family: var(--fonte-padrao);
+    margin: 0 32px 20em 32px;
 }
 
 /* CABECALHO */
@@ -81,7 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 96px 0;
+    padding: 72px 0;
 
 }
 
@@ -98,5 +99,137 @@ body {
 
 .texto__tres-sobre {
     font-size: 20px;
+    color: var(--text-color);
+}
+
+
+/* SEÇÃO MÉTRICAS */
+.metricas__secao {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 32px;
+    padding: 0 32px 96px 32px;
+}
+
+.metricas__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.metricas__numero {
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.metricas__subtitulo {
+    font-size: 18px;
+    /* font-weight: 500; */
+    color: black;
+}
+
+.metricas__texto {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* SEÇÃO DE VAGAS */
+
+.vagas__secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textos__vagas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.texto__um-vagas {
+    padding: 10px 20px;
+    border-radius: 16px;
+    background: #8E24240D;
+    max-width: 125px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.texto__dois-vagas {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.texto__tres-vagas {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.img__vagas {
+    max-width: 100%;
+    padding: 42px 24px;
+}
+
+/* VAGAS DISPONIVEIS */
+
+.vagas-disponiveis__secao {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 64px;
+}
+
+.titulo__categoria {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.categoria__vagas {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+    padding: 0 72px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid var(--gray-200, #EAECF0);
+    border-radius: 16px;
+    padding: 30px 30px 32px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    transition: 300ms;
+}
+
+.card:hover {
+    border: 1px solid var(--text-color);
+}
+
+.titulo__vaga {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.descricao__vaga {
+    display: flex;
+    column-gap: 24px;
+    font-size: 16px;
     color: var(--text-color);
 }
